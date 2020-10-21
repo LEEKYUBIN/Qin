@@ -6,7 +6,7 @@ import axios from 'axios';
 
 
 
-
+// 10월21일부
 function find_id_final({ navigation, route }) {
     let userName = route.params.memtitle[0];
     let userID = route.params.memtitle[1];

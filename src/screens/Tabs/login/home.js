@@ -6,7 +6,7 @@ import find_id from './find_id/find_id';
 import find_pw from './find_pw/find_pw';
 
 
-
+// 10월21일부
 function LoginHome({ navigation }) {
 
 

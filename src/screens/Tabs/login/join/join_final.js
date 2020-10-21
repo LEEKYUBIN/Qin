@@ -4,6 +4,8 @@ import LoginHome from '../home';
 import join from './join';
 import axios from 'axios';
 
+
+// 10월21일부
 function join_final({ navigation, route }) {
 
     let userName = route.params.memtitle[0];

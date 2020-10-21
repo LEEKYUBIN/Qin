@@ -5,7 +5,7 @@ import find_pw_final from './find_pw_final';
 
 
 
-
+// 10월21일부
 function find_pw_new({ navigation }) {
 
     let [textA, changeTextA] = useState(require('../../../../image/pw_g.png'));

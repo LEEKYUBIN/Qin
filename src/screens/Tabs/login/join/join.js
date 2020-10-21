@@ -26,6 +26,9 @@ import axios from 'axios';
 // }
 
 //const qs = require('qs');
+
+
+// 10월21일부
 function join({ navigation }) {
 
 

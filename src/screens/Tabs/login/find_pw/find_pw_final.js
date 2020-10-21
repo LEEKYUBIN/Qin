@@ -7,7 +7,7 @@ import LoginHome from '../home';
 
 
 
-
+// 10월21일부
 
 function find_pw_final({ navigation }) {
 

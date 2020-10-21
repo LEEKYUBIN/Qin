@@ -16,6 +16,8 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const Stack = createStackNavigator();
 
+
+// 10월21일부
 export default function LoginScreen({ navigation }) {
     return (
         <Stack.Navigator>

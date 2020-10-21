@@ -4,7 +4,7 @@ import Styles from '../../../../styles';
 import find_pw_new from './find_pw_new';
 import Modal from 'react-native-modal';
 
-
+// 10월21일부
 function find_pw({ navigation }) {
 
     let eddie = 3;
