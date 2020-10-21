@@ -4,10 +4,9 @@ import {ScrollView, View, StyleSheet, Text, Image, TouchableOpacity} from 'react
 function CategoryHome({ navigation }) {
 
     return (
-        <View style={{justifyContent: 'center', alignItems: 'center', height: '100%'}}>
         <ScrollView
             horizontal={true}
-            showsHorizontalScrollIndicator={false}
+            showsHorizontalScrollIndicator={true}
             onMomentumScrollEnd={() => {
                 console.log('Scrolling is End');
             }}>
@@ -74,15 +73,13 @@ function CategoryHome({ navigation }) {
                 </TouchableOpacity>
             </View>
         </ScrollView>
-        </View>
     );
 }
 
 const styles = StyleSheet.create({
     item: {
-        justifyContent: 'center',
-        alignItems: "center",
-        padding: 20
+        paddingHorizontal: 20,
+        paddingVertical: 40,
     },
     LtriangleCorner: {
         position: 'absolute',

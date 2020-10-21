@@ -1,8 +1,7 @@
 import React, {  useState, useEffect } from 'react';
 import { View, Text, FlatList, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import SocketIOClient from "socket.io-client";
-const url = 'http://133.186.216.152:3000';
-//const url = 'http://192.168.0.5:3000';
+const url = 'http://192.168.0.5:3000';
 
 export default function ChatHome({ navigation }) {
     const [chatList, setChatList] = useState([]);
@@ -14,7 +13,6 @@ export default function ChatHome({ navigation }) {
     },[]);
     socket.on('return chatList', (data) => {
         setChatList(data);
-        console.log(data);
     })
     
     //FlatList renderItem

@@ -4,6 +4,7 @@ import CategoryScreen from './category';
 import ChatScreen from './chat';
 import FriendScreen from './friend';
 import HashScreen from './hash'
+import LoginScreen from './login'
 import { View, Text, StyleSheet, Image } from 'react-native';
 import myGame from "./sidebar/game/myGame";
 import myProfile from "./sidebar/profile/myProfile";
@@ -57,6 +58,12 @@ function MyTabs() {
                     )
                 }
             } />
+            <Tab.Screen name="login" component={LoginScreen} options={{
+                tabBarIcon: ({ tintColor, focused }) => (
+                    <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
+                        <Image source={focused ? require('../../image/name_y.png') : require('../../image/name_g.png')} style={{ height: 70, width: 70, justifyContent: 'center'}}/>
+                    </View>
+                )}} />
         </Tab.Navigator>
     );
 }

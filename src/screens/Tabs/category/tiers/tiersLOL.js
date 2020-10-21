@@ -25,6 +25,16 @@ function tiersLOL({ navigation }) {
             console.log('error : ' + error);
         });
 
+    let getMyRoom = async (mrurl) => await axios.get(mrurl)
+        .then(function (response) {
+            console.log(response.data)
+            return response.data
+        })
+        .catch(function (error) {
+            console.log(mrurl)
+            console.log('error : ' + error);
+        });
+
 
     return (
             <View style={styles.container}>
@@ -60,9 +70,7 @@ function tiersLOL({ navigation }) {
                                             width: '100%',
                                         }}
                                         onPress={
-                                            // async () => navigation.navigate('roomsLOL', {dataroom: [await getDatas('http://133.186.216.152:8080/category/roomlist?tier=' + data.id + '&game=LOL'), await getDatas('http://133.186.216.152:8080/category/myroom?tier=' + data.id + '&game=LOL&uID=1'), data.id]})
-                                            async () => navigation.navigate('roomsLOL', {dataroom: [data.id]})
-
+                                            async () => navigation.navigate('roomsLOL', {dataroom: [await getDatas('http://133.186.216.152:8080/category/roomlist?tier=' + data.id + '&game=LOL'), await getMyRoom('http://133.186.216.152:8080/category/myroom?tier=' + data.id + '&game=LOL&uID=1')]})
                                         }>
                                         <View
                                             style={{
